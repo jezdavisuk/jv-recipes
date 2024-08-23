@@ -1,4 +1,7 @@
 public class Ingredient {
 
-//    id, name, quantity, unit of measurement
+    int id;
+    String name;
+    int quantity;
+    String unitOfMeasurement;
 }

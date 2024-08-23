@@ -1,9 +1,11 @@
+import java.util.Date;
+
 public class Comment {
 
-//    id,
-//    text,
-//    date posted,
-//    author (User),
-//    associated recipe
+    int id;
+    String text;
+    Date datePosted;
+    User author;
+    Recipe associatedRecipe;
 
 }

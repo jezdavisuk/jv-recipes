@@ -1,5 +1,10 @@
-public class Category {
+import jakarta.persistence.*;
 
-//    id, name
+@Entity
+class Category {
+    @Id
+    @GeneratedValue // auto-generate IDs
+    Long id;
+    String name;
 
 }

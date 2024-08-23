@@ -1,8 +1,8 @@
 public class Image {
 
-//    id,
-//    filename,
-//    file data,
-//    associated recipe
+    int id;
+    String filename;
+    String fileData;
+    Recipe associatedRecipe;
 
 }
