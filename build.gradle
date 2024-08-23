@@ -18,6 +18,9 @@ dependencies {
 
     // H2 database
     runtimeOnly 'com.h2database:h2:2.1.214'
+
+    implementation 'org.hibernate.orm:hibernate-agroal:6.4.4.Final'
+    implementation 'io.agroal:agroal-pool:2.1'
 }
 
 test {
