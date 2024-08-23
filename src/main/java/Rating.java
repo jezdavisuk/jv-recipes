@@ -1,5 +1,9 @@
 import java.util.Date;
+import java.util.Set;
+
 import jakarta.persistence.*;
+
+import static jakarta.persistence.FetchType.LAZY;
 
 public class Rating {
 
@@ -8,7 +12,11 @@ public class Rating {
     Long id;
     int value;
     Date rated;
-    Recipe associatedRecipe;
+
+    @ManyToOne(fetch=LAZY)
     User rater;
+
+    @ManyToOne(fetch=LAZY)
+    Recipe associatedRecipe;
 
 }

@@ -1,5 +1,9 @@
 import java.util.Date;
+import java.util.Set;
+
 import jakarta.persistence.*;
+
+import static jakarta.persistence.FetchType.LAZY;
 
 public class User {
 
@@ -11,5 +15,14 @@ public class User {
     String password;
     Roles roles;
     Date dateRegistered;
+
+    @OneToMany(mappedBy="user")
+    Set<Comment> listOfComments;
+
+    @OneToMany(mappedBy="user")
+    Set<Recipe> listOfRecipe;
+
+    @OneToMany(mappedBy="user")
+    Set<Rating> listOfRatings;
 
 }

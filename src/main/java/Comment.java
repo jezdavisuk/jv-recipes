@@ -1,5 +1,9 @@
 import java.util.Date;
+import java.util.Set;
+
 import jakarta.persistence.*;
+
+import static jakarta.persistence.FetchType.LAZY;
 
 public class Comment {
 
@@ -8,7 +12,9 @@ public class Comment {
     Long id;
     String text;
     Date datePosted;
-    User author;
     Recipe associatedRecipe;
+
+    @ManyToOne(fetch=LAZY)
+    User author;
 
 }

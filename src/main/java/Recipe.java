@@ -19,15 +19,21 @@ public class Recipe {
     int cookingTime;
     int serving;
     int difficultyLevel;
-    int rating;
+    Set<Image> image;
     Date dateCreated;
     Date lastModified;
 
-    @OneToMany(fetch=LAZY)
+    @OneToMany(mappedBy="recipe")
     Set<Ingredient> listOfIngredients;
 
-    @OneToMany(fetch=LAZY)
+    @OneToMany(mappedBy="recipe")
     Set<Category> listOfCategories;
+
+    @OneToMany(mappedBy="recipe")
+    Set<Rating> listOfRating;
+
+    @OneToMany(mappedBy = "recipe")
+    Set<Tag> listOfTags;
 
     @ManyToOne(fetch=LAZY)
     User creator;

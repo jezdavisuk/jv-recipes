@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017443ec-ee84-4c66-85a9-305d2f25ea76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Recipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
