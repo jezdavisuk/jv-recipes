@@ -5,19 +5,26 @@ import static java.lang.Boolean.TRUE;
 import static org.hibernate.cfg.JdbcSettings.*;
 
 public class Database {
-    public static SessionFactory getSessionFactory(){
-        // TODO
-    }
 
-    var sessionFactory = new Configuration()
-            // use H2 in-memory database
-            .setProperty(URL, "jdbc:h2:mem:db1")
-            // default username / password
-            .setProperty(USER, "sa")
-            .setProperty(PASS, "")
-            // options to display SQL in console
-            .setProperty(SHOW_SQL, TRUE.toString())
-            .setProperty(FORMAT_SQL, TRUE.toString())
-            .setProperty(HIGHLIGHT_SQL, TRUE.toString())
-            .buildSessionFactory();
+    public static SessionFactory getSessionFactory() {
+        SessionFactory sessionFactory = new Configuration()
+                // use H2 in-memory database
+                .setProperty(URL, "jdbc:h2:mem:db1")
+                // default username / password
+                .setProperty(USER, "sa")
+                .setProperty(PASS, "")
+                // options to display SQL in console
+                .setProperty(SHOW_SQL, TRUE.toString())
+                .setProperty(FORMAT_SQL, TRUE.toString())
+                .setProperty(HIGHLIGHT_SQL, TRUE.toString())
+                .buildSessionFactory();
+
+        return sessionFactory;
+    }
+//    Session session = sessionFactory.openSession();
+//
+//    session.close(); // IMPORTANT!
+
 }
+
+
