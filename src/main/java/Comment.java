@@ -1,8 +1,11 @@
 import java.util.Date;
+import jakarta.persistence.*;
 
 public class Comment {
 
-    int id;
+    @Id
+    @GeneratedValue
+    Long id;
     String text;
     Date datePosted;
     User author;

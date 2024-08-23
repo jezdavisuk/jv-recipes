@@ -1,6 +1,10 @@
+import jakarta.persistence.*;
+
 public class Image {
 
-    int id;
+    @Id
+    @GeneratedValue
+    Long id;
     String filename;
     String fileData;
     Recipe associatedRecipe;

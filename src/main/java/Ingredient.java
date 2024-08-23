@@ -1,6 +1,10 @@
+import jakarta.persistence.*;
+
 public class Ingredient {
 
-    int id;
+    @Id
+    @GeneratedValue
+    Long id;
     String name;
     int quantity;
     String unitOfMeasurement;

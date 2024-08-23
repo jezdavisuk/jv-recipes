@@ -1,8 +1,11 @@
 import java.util.Date;
+import jakarta.persistence.*;
 
 public class User {
 
-    int id;
+    @Id
+    @GeneratedValue
+    Long id;
     String username;
     String email;
     String password;

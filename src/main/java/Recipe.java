@@ -1,14 +1,17 @@
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.Set;
+
+import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
 public class Recipe {
 
-    @OneToMany
+    @Id
+    @GeneratedValue
+    Long id;
 
-    int id;
     String title;
     String description;
     String instructions;
@@ -17,10 +20,16 @@ public class Recipe {
     int serving;
     int difficultyLevel;
     int rating;
-    String listOfIngredients;
-    String listOfCategories;
-    User creator;
     Date dateCreated;
     Date lastModified;
+
+    @OneToMany(fetch=LAZY)
+    Set<Ingredient> listOfIngredients;
+
+    @OneToMany(fetch=LAZY)
+    Set<Category> listOfCategories;
+
+    @ManyToOne(fetch=LAZY)
+    User creator;
 
 }
