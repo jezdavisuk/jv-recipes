@@ -25,4 +25,10 @@ public class User {
     @OneToMany(mappedBy="user")
     Set<Rating> listOfRatings;
 
+    public User(String username, String email, String password, Roles roles) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.roles = roles;
+    }
 }

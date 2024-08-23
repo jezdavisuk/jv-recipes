@@ -18,13 +18,25 @@ public class Database {
                 .setProperty(FORMAT_SQL, TRUE.toString())
                 .setProperty(HIGHLIGHT_SQL, TRUE.toString())
                 .setProperty("hibernate.agroal.maxSize", "20")
+                .addAnnotatedClass(Recipe.class)
+                .addAnnotatedClass(Category.class)
+                .addAnnotatedClass(Comment.class)
+                .addAnnotatedClass(Image.class)
+                .addAnnotatedClass(Ingredient.class)
+                .addAnnotatedClass(Rating.class)
+                .addAnnotatedClass(Tag.class)
+                .addAnnotatedClass(User.class)
                 .buildSessionFactory();
 
         return sessionFactory;
     }
-//    Session session = sessionFactory.openSession();
-//
-//    session.close(); // IMPORTANT!
+
+    static void seed(){
+        var sessionFactory = getSessionFactory();
+        sessionFactory.inTransaction(session -> {
+            session.persist(new User("Harry","harrypotter@hogwarts.com","Hedwig", Roles.ADMIN));
+        });
+    }
 
 }
 
